@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background">
+        <div id="phone">
+            <div class="top">
+                <div class="time">
+                    <div></div>
+                </div>
+                <div class="netCharge">
+                    <img src="NetworkGray.png" alt="">
+                    <img src="ConnectionGray.png" alt="">
+                    <div id="charge">40</div>
+                </div>
+            </div>
+            <div class="display">
+                <div class="smallTextArea"></div>
+                <div class="textArea"></div>
+            </div>
+            <div class="buttons">
+                <button class="grayBtn clearBtn">AC</button>
+                <button class="grayBtn" onclick="textArea.textContent = textArea.textContent.slice(0, -1)">DE</button>
+                <button class="grayBtn">%</button>
+                <button class="orangeBtn operandBtn" value="/">÷</button>
+                <button class="numBtn">7</button>
+                <button class="numBtn" value ="8">8</button>
+                <button class="numBtn">9</button>
+                <button class="orangeBtn operandBtn" value="*">x</button>
+                <button class="numBtn">4</button>
+                <button class="numBtn">5</button>                
+                <button class="numBtn">6</button>
+                <button class="orangeBtn operandBtn" value="-">-</button>
+                <button class="numBtn">1</button>
+                <button class="numBtn">2</button>
+                <button class="numBtn">3</button>
+                <button class="orangeBtn operandBtn" value="+">+</button>
+                <button id="zero"  class="numBtn">0</button>
+                <button class="numBtn">.</button>
+                <button class="orangeBtn equal">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js" defer></script>
+</html>
