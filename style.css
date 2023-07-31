@@ -128,4 +128,8 @@ button:hover {
 #zero {
     grid-column: 2 span;
     border-radius: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
 }

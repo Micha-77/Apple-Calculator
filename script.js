@@ -16,7 +16,7 @@ let string = "";
 
 numBtn.forEach(Btn => { // change background and color of orange button when clicked
     Btn.addEventListener('click', () => {
-    textArea.textContent += parseInt(Btn.textContent);
+    textArea.textContent += Btn.textContent;
     })
 })
 
@@ -38,7 +38,6 @@ operandBtn.forEach(Btn => { // change background and color of orange button when
     Btn.style.backgroundColor = "white";
     operator = Btn.value;
     textArea.textContent += Btn.value;
-
     })
 })
 
@@ -54,7 +53,7 @@ equalBtn.addEventListener('click', () => {
     })
     })
 
-    
+
 clearBtn.addEventListener('click', clearDisplay); // event which works on AC button when clicked
 
 function clearDisplay() { // function to equalize display text to 0
@@ -88,42 +87,32 @@ charge.style.backgroundImage =  `linear-gradient(to right, white 0%, white ${ran
 
 
 
-// add, subtract, multiply and divide functions
-function add(a, b, oper = "+") {
-    return parseInt(a + oper + b);
-    textArea.textContent =  parseInt(a + oper + b);
-}
-function subtract(a, b, oper = "-") {
-    textArea.textContent =  parseInt(a + oper + b);
-}
-function multiply(a, b, oper= "*") {
-    textArea.textContent =  parseInt(a + oper + b);
-}
-function divide(a, b, oper = "/") {
-    textArea.textContent =  parseInt(a + oper + b);
-}
-
-console.log(add(3, 5, "+"));
+// // add, subtract, multiply and divide functions
+// function add(a, b, oper = "+") {
+//     return parseInt(a + oper + b);
+//     textArea.textContent =  parseInt(a + oper + b);
+// }
+// function subtract(a, b, oper = "-") {
+//     textArea.textContent =  parseInt(a + oper + b);
+// }
+// function multiply(a, b, oper= "*") {
+//     textArea.textContent =  parseInt(a + oper + b);
+// }
+// function divide(a, b, oper = "/") {
+//     textArea.textContent =  parseInt(a + oper + b);
+// }
 
 
-function operate(firstNum, secondNum, operator) {
-    if (operator = "+") {
-        return add(firstNum, secondNum, operator)
-    } else if (operator = "-") {
-        return subtract(firstNum, secondNum, operator)
-    } else if (operator = "*") {
-        return multiply(firstNum, secondNum, operator)
-    } else if (operator = "/") {
-        return divide(firstNum, secondNum, operator)
-    }
-}
 
-// operandBtn.forEach(Btn => { // 
-//     Btn.addEventListener('click', () => {
-//     // Btn.style.color = "#FF9500";
-//     // Btn.style.backgroundColor = "white";
-//     smallText.textContent = textArea.textContent + " " + Btn.textContent
-//     textArea.textContent = ""
+// function operate(firstNum, secondNum, operator) {
+//     if (operator = "+") {
+//         return add(firstNum, secondNum, operator)
+//     } else if (operator = "-") {
+//         return subtract(firstNum, secondNum, operator)
+//     } else if (operator = "*") {
+//         return multiply(firstNum, secondNum, operator)
+//     } else if (operator = "/") {
+//         return divide(firstNum, secondNum, operator)
+//     }
+// }
 
-//     })
-// })
